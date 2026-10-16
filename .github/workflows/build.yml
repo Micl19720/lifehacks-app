@@ -33,7 +33,7 @@ jobs:
 
       - name: Generate signing keystore
         run: |
-          keytool -genkeypair -v -keystore release.jks -storepass lifehacks2026 \
+          keytool -genkeypair -v -keystore app/release.jks -storepass lifehacks2026 \
             -keypass lifehacks2026 -alias lifehacks -keyalg RSA -keysize 2048 \
             -validity 10000 -dname "CN=Lifehacks, OU=Dev, O=Lifehacks, L=Moscow, C=RU"
           echo "storeFile=release.jks" > keystore.properties
@@ -53,4 +53,4 @@ jobs:
           name: apk-release
           path: |
             app/build/outputs/apk/release/*.apk
-            release.jks
+            app/release.jks
