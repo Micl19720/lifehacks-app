@@ -1,0 +1,26 @@
+# === Gradle / Android build ===
+build/
+.gradle/
+*.apk
+*.aab
+*.ap_
+output.json
+
+# === Secrets / signing (НЕ заливать на GitHub!) ===
+keystore.properties
+*.jks
+*.keystore
+local.properties
+
+# === IDE ===
+.idea/
+*.iml
+.vscode/
+*.swp
+
+# === OS ===
+.DS_Store
+Thumbs.db
+
+# === Logs ===
+*.log
